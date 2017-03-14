@@ -20,10 +20,11 @@ p.convert=function(key,val) {
     enumerable: true,
     configurable: true,
     set:function(newValue){
-      console.log("你设置了"+key+"，新的值为"+newValue)
+      console.log("你设置了"+key+"，新的值为"+newValue);
+      val=newValue
     },
     get:function(){
-      console.log("你访问了"+key)
+      console.log("你访问了"+key);
       return val
     }
   })
